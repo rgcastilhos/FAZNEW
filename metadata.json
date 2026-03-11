@@ -1,0 +1,5 @@
+{
+  "name": "FazendaOn",
+  "description": "Aplicativo para gestão rural com estimativa de peso animal por IA e controle de inventário.",
+  "requestFramePermissions": ["camera", "geolocation"]
+}

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: react-example
+    env: docker
+    autoDeploy: true
+    healthCheckPath: /api/health
+    disk:
+      name: app-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: STORAGE_PATH
+        value: /data/uploads
+      - key: DATA_DIR
+        value: /data/uploads
+      - key: ADMIN_CODE
+        value: "153720"
+      - key: ADMIN_USERNAME
+        value: "RKI"
